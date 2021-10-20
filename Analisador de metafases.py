@@ -23,11 +23,9 @@ while True:
     if qst in "Nn":
         break
     print(cariotipo)
-print(f'Lista de Cromossomos')
-print(f'ID {" " * 5}Razão {" " * 17}Altura')
 arquivo = open("C:\\Users\\dagol\\Desktop\\Citogenetica\\H.motuchae\\11085\\11085.csv", "w")
 while nmet > cont:
-    valores = f'{cariotipo[cont]["ID"]}; {cariotipo[cont]["Razão"]:.2f}; {cariotipo[cont]["Altura do Cromossomo"]};'
+    valores = f'{cariotipo[cont]["ID"]}; {cariotipo[cont]["Razão"]:.2f}; {cariotipo[cont]["Altura do Cromossomo"]}\n'
     arquivo.write(valores)
     cont += 1
     if nmet == cont:
