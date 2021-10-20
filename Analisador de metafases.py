@@ -25,7 +25,7 @@ while True:
     print(cariotipo)
 arquivo = open("C:\\Users\\dagol\\Desktop\\Citogenetica\\H.motuchae\\11085\\11085.csv", "w")
 while nmet > cont:
-    valores = f'{cariotipo[cont]["ID"]}; {cariotipo[cont]["Razão"]:.2f}; {cariotipo[cont]["Altura do Cromossomo"]}\n'
+    valores = f'{"ID"};{"Razão"};{"Altura do Cromossomo"};{"Tipo de Cromossomo"}\n{cariotipo[cont]["ID"]}; {cariotipo[cont]["Razão"]:.2f}; {cariotipo[cont]["Altura do Cromossomo"]};{cariotipo[cont]["Tipo de cromossomo"]}\n'
     arquivo.write(valores)
     cont += 1
     if nmet == cont:
